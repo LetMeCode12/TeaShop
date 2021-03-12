@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-teashop-dev-201619-authRole",
+      "UnauthRoleArn": "arn:aws:iam::221178591558:role/amplify-teashop-dev-201619-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::221178591558:role/amplify-teashop-dev-201619-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-teashop-dev-201619-deployment",
+      "UnauthRoleName": "amplify-teashop-dev-201619-unauthRole",
+      "StackName": "amplify-teashop-dev-201619",
+      "StackId": "arn:aws:cloudformation:eu-central-1:221178591558:stack/amplify-teashop-dev-201619/32cca720-0d80-11eb-b273-06bcf0585990",
+      "AmplifyAppId": "dphz25phueft1"
+    }
+  }
+}

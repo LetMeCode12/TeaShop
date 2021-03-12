@@ -1,0 +1,47 @@
+.ProductComponent {
+    background-color: white;
+    height: fit-content;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    padding: 0 !important;
+    font-weight: 500;
+    min-width: 15rem;
+    img {
+        width: 100%;
+        border-bottom: 1px solid black;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .content {
+        padding: 1rem;
+        .expand{
+            display: flex;
+            flex-direction: column;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height .5s linear;
+            span{
+                overflow:hidden; 
+                white-space:nowrap; 
+                text-overflow: ellipsis;
+            }
+            .myButton{
+                display: flex;
+                justify-content: flex-end;
+                margin: .5rem .2rem .2rem 0;
+            }
+        }
+    }
+    &:hover {
+        // background-color: #3bcaee;
+        box-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+        transform: scale(1.05);
+        .expand{
+            height: auto;
+            max-height: 50rem;
+        }
+    }
+    
+}

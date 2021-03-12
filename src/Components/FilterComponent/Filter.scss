@@ -1,0 +1,65 @@
+.Filter {
+    border: black solid 2px;
+    box-shadow: 0 0 5px black;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  
+
+    .Selector{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        padding: 1rem 0;
+        span {
+            margin: 0 1rem;
+            font-size: larger;
+            font-weight: 700;
+            white-space: nowrap;
+            width: max-content;
+        }
+        select{
+            max-width: 15rem;
+        }
+    }
+
+    .Component {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .btn {
+            margin : 1rem;
+        }
+       
+        span {  
+            font-size: larger;
+            font-weight: 700;
+            white-space: nowrap;
+            margin-right: 1rem;
+        }
+
+        .MyField {
+            display: flex;
+            flex-direction: row;
+            width: max-content;
+            white-space: nowrap;
+            padding: 1rem;
+            input {
+                max-width: 13rem;
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
+        }
+    }
+    
+}

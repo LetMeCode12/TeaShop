@@ -1,0 +1,49 @@
+.Collapselist {
+    border-top: solid 1px black;
+    
+    & :first-child{
+        border-top: none;
+
+    }
+
+
+    & > .CollapseData {
+       
+      
+
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height linear 1s ;
+
+        .List{
+            width: 80%;
+            margin-bottom: 1rem;
+        }
+
+        &.expand{
+            
+            height: auto;
+            max-height: 20rem;
+        }
+    }
+
+   
+
+    & > div {
+        display: flex;
+        justify-content: center;
+        
+        
+
+        & > span {
+            height: auto;
+            flex: 1 1 30%;
+            display: flex;
+            justify-content: center;
+            margin: 0.3rem 0;
+            align-items: center;
+            font-size: medium;
+            font-weight: 400;
+        }
+    }
+}

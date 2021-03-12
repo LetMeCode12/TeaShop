@@ -1,0 +1,79 @@
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.MainPage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, .1);
+ 
+    
+    .MenuBar{
+        max-height: 100%;
+        min-width: 15rem;
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        transition: width .5s ease-in,min-width .5s ease-in,left .3s linear;
+        z-index: 98;
+        overflow: hidden;
+        
+    
+        .UserContent{
+            position: relative;
+            background-color: white;
+            width: 100%;
+            height: max-content;
+            display: flex; 
+            align-items: center;
+            border: black solid 1px;
+            border-left:none ;   
+            padding: 0 30px;               
+        }
+    
+        .RouteContent{
+            background-color:  white;
+            width: 100%;
+            height: 100%;
+            border: black solid 1px;
+            border-top: none;
+            border-bottom: none;
+            border-left:none ;
+        }
+    
+        .MenuFooter{
+            background-color: white;
+            width: 100%;
+            height: max-content; 
+            border:black solid 1px;
+            display:flex;
+            align-items: center;
+            border-left:none ;
+            padding: 0 58px;
+        }
+    }  
+
+    .PageContent{
+        position: relative;
+        transition: all .5s linear;
+        width: 100%;
+        max-height: 100%;
+        padding: auto;
+        margin: 0 1.7vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+}

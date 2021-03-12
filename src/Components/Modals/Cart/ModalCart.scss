@@ -1,0 +1,44 @@
+.Cart{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    max-height: 40rem;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &.Orders{
+        max-height: 24rem;
+    }
+
+    .Item{
+        height: max-content;
+        border-top: solid black 1px;
+        border-bottom: solid black 1px;
+        width: 100%;
+        img{
+            width: 40%;
+            height: 100%;
+        }
+        .Buttonek{
+            margin-left: auto;
+            margin-right: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .Info{
+            display: flex;
+            flex-direction: column;
+            margin: 0 1rem;
+            span{
+                margin: .5rem 0 ;
+                font-weight: 600;
+            }
+        }
+        &:hover{
+            background-color: gainsboro;
+        }
+    }
+}

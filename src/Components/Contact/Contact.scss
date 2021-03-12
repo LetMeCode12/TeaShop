@@ -1,0 +1,20 @@
+.Contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+    
+    div{
+        display:flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .fa{
+        min-width: 18px;
+        display: flex;
+        justify-content: center;
+    }
+}

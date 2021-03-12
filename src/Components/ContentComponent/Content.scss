@@ -1,0 +1,15 @@
+.Content{
+    height: 75vh;
+    border: black solid 2px;
+    box-shadow: 0 0 5px black;    
+    background-color: white;
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    justify-content: center;
+}
